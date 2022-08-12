@@ -45,3 +45,40 @@ nav li{ padding: 0 20px; }
     z-index: 1;
     left: 100px; top: 300px;
 }
+
+/* Section ProductList */
+.products_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.productList_section h2{
+    text-align: center;
+    margin: 30px 0;
+}
+.products_list .product{
+    display: flex;
+    flex-direction: column;
+    border: 1.5px dashed black;
+    margin: 10px;
+    padding: 10px;
+}
+.products_list .product img{
+    width: 350px;
+}
+.products_list .product span{
+    padding-top: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.bxs-upside-down{
+    position: fixed;
+    font-size: 68px;
+    transform: rotate(180deg);
+    top: 85%; left: 90%;
+    z-index: 100;
+    transition: 0.3s;
+}
+.active{
+    transform: rotate(0deg);
+}
