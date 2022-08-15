@@ -3,20 +3,31 @@ body{ width: 1200px; margin: auto; }
 h1{
     font-size: 30px;
     padding-left: 10px;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 40px;
 }
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+section:nth-of-type(2){ background-color: #f9f5e0; }
 nav{
-    width: 98%; height: 100px;
+    width: 100%; height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px 10px;
+    font-family: 'Cormorant SC', serif;
+    background-color: #f9f5e0;
+    border-bottom: 2px dashed black;
 }
 nav ul{ display: flex; }
 nav ul:nth-of-type(1){ font-size: 18px; }
 nav ul:nth-of-type(2){ font-size: 16px; }
 nav li{ padding: 0 20px; }
 
-.gnb_menu a::after{
+/* .gnb_menu a::after{
     width: 0%;
     content: '';
     border-bottom: 2px dashed black;
@@ -27,12 +38,15 @@ nav li{ padding: 0 20px; }
 .gnb_menu a:hover::after{
     width: 100%;
     left: 0;
-}
+} */
 
 
 /* Section ImgSlider */
 .banner{
     width: 100%; height: 850px;
+}
+.mySwiper{
+    height: 700px;
 }
 .banner>img:nth-of-type(1){
     width: 1200px;
@@ -43,7 +57,7 @@ nav li{ padding: 0 20px; }
     width: 800px; 
     position: relative;
     z-index: 1;
-    left: 100px; top: 300px;
+    left: 100px; top: 130px;
 }
 
 /* Section ProductList */
@@ -53,14 +67,17 @@ nav li{ padding: 0 20px; }
 }
 .productList_section h2{
     text-align: center;
-    margin: 30px 0;
+    padding: 50px 0;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 28px;
 }
 .products_list .product{
     display: flex;
     flex-direction: column;
-    border: 1.5px dashed black;
+    border: 2px dashed black;
     margin: 10px;
     padding: 10px;
+    font-family: 'Cormorant SC', serif;
 }
 .products_list .product img{
     width: 350px;
@@ -71,14 +88,11 @@ nav li{ padding: 0 20px; }
     text-align: center;
 }
 
+
 .bxs-upside-down{
     position: fixed;
     font-size: 68px;
     transform: rotate(180deg);
     top: 85%; left: 90%;
     z-index: 100;
-    transition: 0.3s;
-}
-.active{
-    transform: rotate(0deg);
 }

@@ -6,3 +6,10 @@ var swiper = new Swiper(".mySwiper", {
       disableOnInteraction: false,
     },
 });
+
+var topBtn = document.querySelector('.bxs-upside-down');
+topBtn.addEventListener('click', moveToTop);
+
+function moveToTop(){
+  window.scrollTo({ top: 0, behavior: "smooth" })
+}
