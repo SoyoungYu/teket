@@ -96,3 +96,13 @@ nav li{ padding: 0 20px; }
     top: 85%; left: 90%;
     z-index: 100;
 }
+
+/* Footer Design */
+footer{
+    background-color: #f9f5e0;
+    padding: 30px 20px;
+}
+
+address{
+    font-size: 12px;
+}
